@@ -5,7 +5,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar
+                collapseOnSelect
+                expand="lg"
+                bg="dark"
+                variant="dark"
+                sticky="top"
+            >
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         MEDICHA
@@ -18,6 +24,18 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link as={Link} to="/departments">
                                 Departments
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/allService">
+                                Services
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/doctors">
+                                Doctors
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/about">
+                                About
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/contact">
+                                Contact
                             </Nav.Link>
                         </Nav>
                         <Nav>

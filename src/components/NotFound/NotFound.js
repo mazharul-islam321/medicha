@@ -1,9 +1,10 @@
 import React from "react";
+import logo404 from "../../images/404.jpg";
 
 const NotFound = () => {
     return (
         <div>
-            <h2> this is 404 page</h2>
+            <img className="img-fluid" src={logo404} alt="" />
         </div>
     );
 };
