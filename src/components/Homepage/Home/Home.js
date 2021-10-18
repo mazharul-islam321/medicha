@@ -13,6 +13,8 @@ const Home = () => {
     const [departments] = useDepartment();
     const [services] = useServices();
 
+    const newDepartments = departments.slice(0, 4);
+    const newServices = services.slice(0, 6);
     return (
         <>
             <Container>
@@ -20,7 +22,7 @@ const Home = () => {
                 <div>
                     <h2 className="text-center">Medical Departments</h2>
                     <Row xs={1} md={2} lg={4} className="g-4">
-                        {departments.map((department) => (
+                        {newDepartments.map((department) => (
                             <Department
                                 key={department.id}
                                 department={department}
@@ -33,7 +35,7 @@ const Home = () => {
                 <div>
                     <h2 className="text-center">Specialized Services</h2>
                     <Row xs={1} md={2} lg={3} className="g-4">
-                        {services.map((service) => (
+                        {newServices.map((service) => (
                             <Services
                                 key={service.id}
                                 service={service}
