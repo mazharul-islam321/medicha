@@ -1,0 +1,50 @@
+[
+    {
+        "id": 9623475,
+        "name": "CardioLogy",
+        "description": "The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Heart_diagram_blood_flow_en.svg/1200px-Heart_diagram_blood_flow_en.svg.png"
+    },
+    {
+        "id": 4788127,
+        "name": "Neurology",
+        "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord.",
+        "img": "https://i.ibb.co/d0H9k4m/download-min.jpg"
+    },
+    {
+        "id": 946776,
+        "name": "Gastrology",
+        "description": "Gastroenterology is the study of the normal function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas, gallbladder, bile ducts and liver. It involves a detailed understanding of the normal action (physiology) of the gastrointestinal organs including the movement of material through the stomach and intestine (motility), the digestion and absorption of nutrients into the body, removal of waste from the system, and the function of the liver as a digestive organ.",
+        "img": "https://i.ibb.co/KjGWhLM/Gastroenterologist-1920x1080.jpg"
+    },
+    {
+        "id": 2455679,
+        "name": "Urology",
+        "description": "Urology is the field of medicine that focuses on diseases of the urinary tract and the male reproductive tract. Some urologists treat general diseases of the urinary tract. Others specialize in a particular type of urology, such as: female urology, which focuses on conditions of a woman's reproductive and urinary tract.",
+        "img": "https://i.ibb.co/mCR4p3p/pillar-urology-07-1200x675.png"
+    },
+    {
+        "id": 5594934,
+        "name": "Pulmonology",
+        "description": "Pulmonology is a field of medicine that focuses specifically on diagnosing and treating disorders of the respiratory system. Subspecialties of pulmonology include: interstitial lung disease, which focuses on lung diseases marked by persistent inflammation and scarring.",
+        "img": "https://i.ibb.co/pvFjvv1/Pulmonology-Banner1.png"
+    },
+    {
+        "id": 9370409,
+        "name": "Gynecology",
+        "description": "What Does a Gynecologist Do? Gynecologists give reproductive and sexual health services that include pelvic exams, Pap tests, cancer screenings, and testing and treatment for vaginal infections. They diagnose and treat reproductive system disorders such as endometriosis, infertility, ovarian cysts, and pelvic pain",
+        "img": "https://i.ibb.co/fMtFQLF/obgyn-1920x1080.jpg"
+    },
+    {
+        "id": 283864,
+        "name": "Orthopedic",
+        "description": "Orthopedics is a branch of medicine that focuses on the care of the musculoskeletal system. ... A person who specializes in orthopedics is known as an orthopedist. Orthopedists use both surgical and nonsurgical approaches to treat a variety of musculoskeletal issues, such as sports injuries, joint pain, and back problems.",
+        "img": "https://i.ibb.co/gybJkkm/oac-diseases-and-conditions-700x400.jpg"
+    },
+    {
+        "id": 8978420,
+        "name": "Dentist",
+        "description": "Dentistry, also known as dental medicine and oral medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity (the mouth), commonly in the dentition (development and arrangement of teeth) as well as the oral mucosa, and of adjacent and related structures and tissues, particularly in associated maxillofacial (jaw and facial) area",
+        "img": "https://i.ibb.co/jJs0LNs/practice-dentistry-disease-deformities-teeth-cavity-jaws.jpg"
+    }
+]

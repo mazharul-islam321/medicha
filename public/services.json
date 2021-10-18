@@ -1,0 +1,74 @@
+[
+    {
+        "id": 3758257,
+        "name": "Dental Services",
+        "description": "They clean your teeth, remove teeth, remove tooth decay, fill your teeth, treat gum disease and provide education on how to care for your teeth and mouth. Dentists treat people of all ages. Specialist dentists can help you with more specific problems using surgical or cosmetic procedures.",
+        "img": "https://icasnetwork.com/wp-content/uploads/2017/07/medical-slide-1-1.jpg"
+    },
+    {
+        "id": 2492678,
+        "name": "Bariatric Surgery",
+        "description": "TGastric bypass and other weight-loss surgeries — known collectively as bariatric surgery — involve making changes to your digestive system to help you lose weight. Bariatric surgery is done when diet and exercise haven't worked or when you have serious health problems because of your weight.",
+        "img": "https://i.ibb.co/pWDnfjm/services-2.jpg"
+    },
+    {
+        "id": 2451095,
+        "name": "Heart Transplant",
+        "description": "In a heart transplant procedure, a surgeon removes the diseased heart and sews the donor heart in place. He or she then attaches the major blood vessels to the donor heart. Most people who receive a heart transplant enjoy a good quality of life.",
+        "img": "https://i.ibb.co/0MhFCzz/081518-BB-50ya-heart-transplants-feat.jpg"
+    },
+    {
+        "id": 1472905,
+        "name": "Chemical Research",
+        "description": "Chemistry is the study of material substances, their properties and, particularly, their chemical transformations into each other. The focus on chemical transformations explains chemistry's rather undefined position according to standard distinctions between science and technology [Schummer, 1997a].",
+        "img": "https://i.ibb.co/SV6ZCkQ/Tuning-tubes-for-better-catalysts600.jpg"
+    },
+    {
+        "id": 5737042,
+        "name": "Anatomical Pathology",
+        "description": "Anatomical pathology (Commonwealth) or Anatomic pathology (U.S.) is a medical specialty that is concerned with the diagnosis of disease based on the macroscopic, microscopic, biochemical, immunologic and molecular examination of organs and tissues.",
+        "img": "https://i.ibb.co/wc52h5D/Anatomical.jpg"
+    },
+    {
+        "id": 6624368,
+        "name": "Heart Disease",
+        "description": "Heart disease is the leading cause of death in the United States, causing about 1 in 4 deaths. The term “heart disease” refers to several types of heart conditions. In the United States, the most common type of heart disease is coronary artery disease (CAD), which can lead to heart attack.",
+        "img": "https://i.ibb.co/d5DsK70/heart-disease-visual-guide-s2-heart-attack.jpg"
+    },
+    {
+        "id": 8840213,
+        "name": "Joint Replacement",
+        "description": "Total joint replacement is a surgical procedure in which parts of an arthritic or damaged joint are removed and replaced with a metal, plastic, or ceramic device called a prosthesis. The prosthesis is designed to replicate the movement of a normal, healthy joint.",
+        "img": "https://i.ibb.co/TLwc36y/Medically-accurate-illustration-of-the-hip-replacement-3d-illustration.jpg"
+    },
+    {
+        "id": 4600137,
+        "name": "Cholecystectomy",
+        "description": "A cholecystectomy is surgery to remove your gallbladder. The gallbladder is a small organ under your liver. It is on the upper right side of your belly or abdomen. The gallbladder stores a digestive juice called bile which is made in the liver.",
+        "img": "https://i.ibb.co/jD4h3h7/Laparoscopic-Gallbladder-Removal-Anatomy.png"
+    },
+    {
+        "id": 9134203,
+        "name": "Hysterectomy",
+        "description": "A hysterectomy is an operation to remove the uterus. This surgery may be done for different reasons, including: Uterine fibroids that cause pain, bleeding, or other problems. Uterine prolapse, which is a sliding of the uterus from its normal position into the vaginal canal.",
+        "img": "https://i.ibb.co/Qfd0ShX/hysterectomy-2x.jpg"
+    },
+    {
+        "id": 1226760,
+        "name": "Stent Procedure",
+        "description": "A stent is a tiny tube that your doctor can insert into a blocked passageway to keep it open. The stent restores the flow of blood or other fluids, depending on where it's placed. Stents are made of either metal or plastic. Stent grafts are larger stents used for larger arteries.",
+        "img": "https://i.ibb.co/j5c3xcT/23193.jpg"
+    },
+    {
+        "id": 5347748,
+        "name": "Neurosurgery",
+        "description": "Neurosurgery is surgery of the nervous system. It is the medical specialty concerned with the diagnosis and treatment of of patients with injury to, or diseases/disorders of the brain, spinal cord and spinal column, and peripheral nerves within all parts of the body.",
+        "img": "https://i.ibb.co/Sy2YNs7/dr-howard-weiner-in-surgery.png"
+    },
+    {
+        "id": 6154463,
+        "name": "Plastic Surgery",
+        "description": "Plastic surgery deals with the repair, reconstruction, or replacement of physical defects of form or function involving the skin, musculoskeletal system, cranio and maxillofacial structures, hand, extremities, breast and trunk, and external genitalia.",
+        "img": "https://i.ibb.co/n8t6K1b/cosmetic-surgery.png"
+    }
+]

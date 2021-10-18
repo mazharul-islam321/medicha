@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import headerlogo from "../../../images/logo.jpg";
 
 const Header = () => {
     return (
@@ -14,6 +15,12 @@ const Header = () => {
             >
                 <Container>
                     <Navbar.Brand as={Link} to="/">
+                        <img
+                            src={headerlogo}
+                            width="60px"
+                            height="50px"
+                            alt=""
+                        />
                         MEDICHA
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

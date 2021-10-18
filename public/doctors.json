@@ -1,0 +1,74 @@
+[
+    {
+        "id": 4078989,
+        "img": "https://i.ibb.co/FD9Hrc7/doctor-1.jpg",
+        "name": "Dr. Daniel Peter",
+        "specialist": "cardiology",
+        "startTime": "3.00 AM",
+        "endTime": "5.00 PM",
+        "fee": 125
+    },
+    {
+        "id": 7754312,
+        "img": "https://i.ibb.co/10zJt7K/doctor-2.jpg",
+        "name": "Dr. William",
+        "specialist": "Dentist",
+        "startTime": "2.00 AM",
+        "endTime": "7.00 PM",
+        "fee": 135
+    },
+    {
+        "id": 9633821,
+        "img": "https://i.ibb.co/hBc2d5D/doctor-4.jpg",
+        "name": "Dr. Myles",
+        "specialist": "Oncology",
+        "startTime": "2.00 AM",
+        "endTime": "8.00 AM",
+        "fee": 339
+    },
+    {
+        "id": 8282056,
+        "img": "https://i.ibb.co/bR1wSSg/doctor-3.jpg",
+        "name": "Dr. Fouad",
+        "specialist": "Urology",
+        "startTime": "6.00 AM",
+        "endTime": "6.00 PM",
+        "fee": 237
+    },
+    {
+        "id": 5698707,
+        "img": "https://i.ibb.co/VS879z0/doctor-5.jpg",
+        "name": "Dr. Mark",
+        "specialist": "Pulmonology",
+        "startTime": "9.00 AM",
+        "endTime": "10.00 PM",
+        "fee": 423
+    },
+    {
+        "id": 8567808,
+        "img": "https://i.ibb.co/5MWSFZN/doctor-6.jpg",
+        "name": "Dr. Corrie",
+        "specialist": "Allergy",
+        "startTime": "11.00 AM",
+        "endTime": "11.00 PM",
+        "fee": 445
+    },
+    {
+        "id": 7120913,
+        "img": "https://i.ibb.co/N9C0BmS/portrait-smiling-handsome-male-doctor-man-171337-5055.jpg",
+        "name": "Dr. Motiur",
+        "specialist": "nurology",
+        "startTime": "2.00 AM",
+        "endTime": "8.00 PM",
+        "fee": 855
+    },
+    {
+        "id": 8778863,
+        "img": "https://i.ibb.co/82ffBWJ/Portrait-Of-Mature-Male-Doctor-Wearing-White-Coat-Standing-In-Hospital-Corridor.jpg",
+        "name": "Dr. symon",
+        "specialist": "Dentist",
+        "startTime": "2.00 AM",
+        "endTime": "7.00 PM",
+        "fee": 265
+    }
+]
