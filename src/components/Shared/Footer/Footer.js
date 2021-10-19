@@ -1,14 +1,15 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
     return (
         <div className="bg-dark text-light">
             <Container>
-                <Row>
-                    <Col>
-                        <h1>MEDICHA</h1>
+                <Row className="py-4">
+                    <Col xs={12} md={4}>
+                        <h1 className="my-4">MEDICHA</h1>
                         <p>
                             The relentless service of Hospitals in the past 25
                             years taken health care to the most modern levels in
@@ -21,8 +22,8 @@ const Footer = () => {
                         </p>
                         <Link to="/about">Know More</Link>
                     </Col>
-                    <Col>
-                        <h2>Usefull Links</h2>
+                    <Col xs={12} md={4}>
+                        <h2 className="my-4">Usefull Links</h2>
                         <Link to="/departments">
                             <p>departments</p>
                         </Link>
@@ -36,11 +37,16 @@ const Footer = () => {
                             <p>about</p>
                         </Link>
                     </Col>
-                    <Col>
-                        <h2>Opening Hours</h2>
-                    </Col>
-                    <Col>
-                        <h2>Get In Touch</h2>
+                    <Col xs={12} md={4}>
+                        <h2 className="my-4">Get In Touch</h2>
+                        <div>
+                            <h3>PHONE</h3>
+                            <p>+880-1926561783</p>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <span>mazharulislam.lu2016@gmail.com</span>
+                        </div>
                     </Col>
                 </Row>
             </Container>

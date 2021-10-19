@@ -14,10 +14,11 @@ const Carousels = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>
-                                Nulla vitae elit libero, a pharetra augue mollis
-                                interdum.
+                            <h3 className="textcolor">Best Doctors</h3>
+                            <p className="textcolor">
+                                The relentless service of Hospitals in the past
+                                25 years taken health care to the most modern
+                                levels in the region catering to urban & rural.
                             </p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -29,10 +30,16 @@ const Carousels = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
+                            <h3 className="textcolor">
+                                toxicologycal research
+                            </h3>
+                            <p className="textcolor">
+                                Medical research involves research in a wide
+                                range of fields, such as biology, chemistry,
+                                pharmacology and toxicology with the goal of
+                                developing new medicines or medical procedures
+                                or improving the application of those already
+                                available.
                             </p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -44,10 +51,14 @@ const Carousels = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>
-                                Praesent commodo cursus magna, vel scelerisque
-                                nisl consectetur.
+                            <h3 className="textcolor">Specialized Doctors</h3>
+                            <p className="textcolor">
+                                You may call them simply doctors. But most
+                                doctors have extra expertise in one type of
+                                medicine or another. In fact, there are several
+                                hundred medical specialties and subspecialties.
+                                Here are the most common types of doctors you'll
+                                likely see.
                             </p>
                         </Carousel.Caption>
                     </Carousel.Item>
