@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import headerlogo from "../../../images/logo.jpg";
+import useAuth from "../../../hooks/useAuth";
 
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <>
             <Navbar
@@ -16,7 +17,7 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <img
-                            src={headerlogo}
+                            src="https://i.ibb.co/k6GXFhx/logo.png"
                             width="60px"
                             height="50px"
                             alt=""
@@ -45,14 +46,18 @@ const Header = () => {
                                 Contact
                             </Nav.Link>
                         </Nav>
-                        <Nav>
-                            <Nav.Link as={Link} to="/signin">
-                                Sign In
-                            </Nav.Link>
-                            <Nav.Link as={Link} to="/signup" eventKey={2}>
-                                Sign Up
-                            </Nav.Link>
-                        </Nav>
+                        {user.displayName ? (
+                            <button onClick={logOut}>Log Out</button>
+                        ) : (
+                            <Nav>
+                                <Nav.Link as={Link} to="/signin">
+                                    Sign In
+                                </Nav.Link>
+                                <Nav.Link as={Link} to="/signup">
+                                    Sign Up
+                                </Nav.Link>
+                            </Nav>
+                        )}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -11,46 +11,49 @@ import AllService from "./components/AllService/AllService";
 import Doctors from "./components/Doctors/Doctors";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import AuthProvider from "./context/AuthProvider";
 
 function App() {
     return (
         <>
-            <Router>
-                <Header></Header>
-                <Switch>
-                    <Route exact path="/">
-                        <Home></Home>
-                    </Route>
-                    <Route path="/home">
-                        <Home></Home>
-                    </Route>
-                    <Route path="/departments">
-                        <Departments></Departments>
-                    </Route>
-                    <Route path="/allService">
-                        <AllService></AllService>
-                    </Route>
-                    <Route path="/doctors">
-                        <Doctors></Doctors>
-                    </Route>
-                    <Route path="/about">
-                        <About></About>
-                    </Route>
-                    <Route path="/contact">
-                        <Contact></Contact>
-                    </Route>
-                    <Route path="/signin">
-                        <Signin></Signin>
-                    </Route>
-                    <Route path="/signup">
-                        <Signup></Signup>
-                    </Route>
-                    <Route path="*">
-                        <NotFound></NotFound>
-                    </Route>
-                </Switch>
-                <Footer></Footer>
-            </Router>
+            <AuthProvider>
+                <Router>
+                    <Header></Header>
+                    <Switch>
+                        <Route exact path="/">
+                            <Home></Home>
+                        </Route>
+                        <Route path="/home">
+                            <Home></Home>
+                        </Route>
+                        <Route path="/departments">
+                            <Departments></Departments>
+                        </Route>
+                        <Route path="/allService">
+                            <AllService></AllService>
+                        </Route>
+                        <Route path="/doctors">
+                            <Doctors></Doctors>
+                        </Route>
+                        <Route path="/about">
+                            <About></About>
+                        </Route>
+                        <Route path="/contact">
+                            <Contact></Contact>
+                        </Route>
+                        <Route path="/signin">
+                            <Signin></Signin>
+                        </Route>
+                        <Route path="/signup">
+                            <Signup></Signup>
+                        </Route>
+                        <Route path="*">
+                            <NotFound></NotFound>
+                        </Route>
+                    </Switch>
+                    <Footer></Footer>
+                </Router>
+            </AuthProvider>
         </>
     );
 }

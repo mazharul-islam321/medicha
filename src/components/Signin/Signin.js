@@ -1,36 +1,63 @@
 import React from "react";
-import { Container, Form } from "react-bootstrap";
+import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Signin = () => {
+    const { signInUsingGoogle, signInUsingGithub } = useAuth();
     return (
         <>
             <Container>
-                <Form className="mx-auto w-25">
-                    <img
-                        src=""
-                        alt=""
-                        width="200"
-                        height="60"
-                        className="d-inline-block align-top mb-3"
-                    />
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Email" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control
-                            type="submit"
-                            variant="primary"
-                            value="Sign In"
-                            className="btn-color"
-                        />
-                    </Form.Group>
-                    <Link to="/signup">have no account</Link>
-                </Form>
-                <button className="btn-regular">Google Sign In</button>
+                <Row>
+                    <Col>
+                        <h1>MEDICHA</h1>
+                        <img src="https://i.ibb.co/k6GXFhx/logo.png" alt="" />
+                    </Col>
+                    <Col>
+                        <h2>SIGN IN</h2>
+                        <Form className="mx-auto pt-4 pb-5 w-75">
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicEmail"
+                            >
+                                <Form.Label>EMAIL</Form.Label>
+                                <Form.Control
+                                    type="email"
+                                    placeholder="Email Address"
+                                />
+                            </Form.Group>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicPassword"
+                            >
+                                <Form.Label>PASSWORD</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    placeholder="..........."
+                                />
+                            </Form.Group>
+                            <div className="d-grid gap-2 my-4">
+                                <Button variant="secondary">Sign In</Button>
+                            </div>
+                            <div>
+                                <span>Don't have an account?</span>
+                                <Link to="/signup"> Sign Up</Link>
+                            </div>
+                        </Form>
+                        <Button
+                            className="btn-regular me-3"
+                            onClick={signInUsingGoogle}
+                        >
+                            Google Sign In
+                        </Button>
+                        <Button
+                            className="btn-warning"
+                            onClick={signInUsingGithub}
+                        >
+                            Github Sign In
+                        </Button>
+                    </Col>
+                </Row>
             </Container>
         </>
     );

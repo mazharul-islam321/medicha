@@ -1,44 +1,71 @@
 import React from "react";
-import { Container, Form } from "react-bootstrap";
+import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
     return (
         <>
             <Container>
-                <Form className="mx-auto w-25">
-                    <img
-                        src=""
-                        alt=""
-                        width="200"
-                        height="60"
-                        className="d-inline-block align-top mb-3"
-                    />
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="text" placeholder="Name" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Email" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control
-                            type="password"
-                            placeholder="Confirm Password"
-                        />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control
-                            type="submit"
-                            variant="primary"
-                            value="Sign Up"
-                            className="btn-color"
-                        />
-                    </Form.Group>
-                    <Link to="/signin">already have an account</Link>
-                </Form>
+                <Row>
+                    <Col>
+                        <h1>MEDICHA</h1>
+                        <img src="https://i.ibb.co/k6GXFhx/logo.png" alt="" />
+                    </Col>
+                    <Col>
+                        <Form className="mx-auto pt-4 pb-5 w-75">
+                            <h2>REGISTER</h2>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicEmail"
+                            >
+                                <Form.Label>NAME</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Your Full Name"
+                                />
+                            </Form.Group>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicEmail"
+                            >
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control
+                                    type="email"
+                                    placeholder="Email Address"
+                                />
+                            </Form.Group>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicPassword"
+                            >
+                                <Form.Label>PASSWORD</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    placeholder="..........."
+                                />
+                            </Form.Group>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicPassword"
+                            >
+                                <Form.Label>CONFIRM PASSWORD</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    placeholder="............"
+                                />
+                            </Form.Group>
+                            <div className="d-grid gap-2 my-4">
+                                <Button variant="secondary">
+                                    Create Account
+                                </Button>
+                            </div>
+                            <div className="">
+                                <span>already have an account?</span>
+                                <Link to="/signin"> signin</Link>
+                            </div>
+                        </Form>
+                    </Col>
+                </Row>
             </Container>
         </>
     );
