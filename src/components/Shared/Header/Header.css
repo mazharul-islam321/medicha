@@ -1,0 +1,28 @@
+.headerimg {
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.username {
+    margin-right: 10px;
+    color: rgb(145, 142, 142);
+}
+.username:hover {
+    color: rgb(194, 193, 193);
+}
+.logout {
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(145, 142, 142);
+}
+.logout:hover {
+    color: rgb(194, 193, 193);
+}
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}

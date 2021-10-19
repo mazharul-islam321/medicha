@@ -6,13 +6,17 @@ const AllService = () => {
     const [services] = useServices();
     return (
         <>
-            <Container>
-                <h2>this is all service page</h2>
+            <h2 className="text-center py-5">All services</h2>
+            <Container className=" pb-5">
                 <Row xs={1} md={2} className="g-4">
                     {services.map((service) => (
                         <Col key={service.id}>
-                            <Card>
-                                <Card.Img variant="top" src={service.img} />
+                            <Card className="cardheights">
+                                <Card.Img
+                                    className="departimg"
+                                    variant="top"
+                                    src={service.img}
+                                />
                                 <Card.Body>
                                     <Card.Title>{service.name}</Card.Title>
                                     <Card.Text>{service.description}</Card.Text>

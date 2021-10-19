@@ -12,15 +12,16 @@ import "./Home.css";
 const Home = () => {
     const [departments] = useDepartment();
     const [services] = useServices();
-
     const newDepartments = departments.slice(0, 4);
     const newServices = services.slice(0, 6);
     return (
         <>
-            <Container>
+            <div className="backgroundcolor">
                 <Carousel></Carousel>
+            </div>
+            <Container>
                 <div>
-                    <h2 className="text-center">Medical Departments</h2>
+                    <h2 className="text-center py-5">Medical Departments</h2>
                     <Row xs={1} md={2} lg={4} className="g-4">
                         {newDepartments.map((department) => (
                             <Department
@@ -30,10 +31,14 @@ const Home = () => {
                         ))}
                     </Row>
                 </div>
-
+            </Container>
+            <div className="backgroundcolor">
                 <Specialized></Specialized>
+            </div>
+
+            <Container>
                 <div>
-                    <h2 className="text-center">Specialized Services</h2>
+                    <h2 className="text-center my-5">Specialized Services</h2>
                     <Row xs={1} md={2} lg={3} className="g-4">
                         {newServices.map((service) => (
                             <Services

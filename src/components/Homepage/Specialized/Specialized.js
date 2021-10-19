@@ -1,17 +1,18 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import "./Specialized.css";
 
 const Specialized = () => {
     return (
         <>
             <Container>
                 <Row>
-                    <Col>
-                        <h1>
+                    <Col xs={12} md={6} className="textstyle">
+                        <h1 className="mb-4">
                             We Are Trusted The Best Certificate Healthcare,
                             Specialist
                         </h1>
-                        <p>
+                        <p className="mb-4">
                             Explain to you how all this mistaken idea of
                             denouncing pleasure and praising pain was born and I
                             will give you a complete account of the system, and
@@ -24,11 +25,10 @@ const Specialized = () => {
                         <p>Professional Doctors</p>
                         <p>Scientific skills For Getting A Better Result</p>
                     </Col>
-                    <Col>
+                    <Col xs={12} md={6} className="imgpadding">
                         <img
                             src="https://i.ibb.co/Sw5ZmBp/Doctors-checking-medical-testing-on-digital-tablet.jpg"
-                            height="300px"
-                            width="500px"
+                            className="imgpsize"
                             alt=""
                         />
                     </Col>

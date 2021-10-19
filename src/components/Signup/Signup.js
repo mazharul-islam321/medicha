@@ -1,27 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Signup = () => {
+    const { regiError, registerNewUser } = useAuth();
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+    };
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handlePasswordChange = (e) => {
+        setPassword(e.target.value);
+    };
+
+    const handleRegistration = (e) => {
+        e.preventDefault();
+        if (password.length < 6) {
+            setError("Password Must be at least 6 characters long.");
+            return;
+        }
+        if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+            setError("Password Must contain 2 upper case");
+            return;
+        }
+        registerNewUser(email, password, name);
+    };
+
     return (
         <>
             <Container>
                 <Row>
                     <Col>
-                        <h1>MEDICHA</h1>
+                        <h1 className="text-center fw-bold">MEDICHA</h1>
                         <img src="https://i.ibb.co/k6GXFhx/logo.png" alt="" />
                     </Col>
                     <Col>
-                        <Form className="mx-auto pt-4 pb-5 w-75">
-                            <h2>REGISTER</h2>
+                        <Form
+                            className="mx-auto pt-4 pb-5 w-75"
+                            onSubmit={handleRegistration}
+                        >
+                            <h2 className="text-center">REGISTER</h2>
                             <Form.Group
                                 className="mb-3"
-                                controlId="formBasicEmail"
+                                controlId="formBasicName"
                             >
                                 <Form.Label>NAME</Form.Label>
                                 <Form.Control
                                     type="text"
+                                    onBlur={handleNameChange}
                                     placeholder="Your Full Name"
+                                    required
                                 />
                             </Form.Group>
                             <Form.Group
@@ -31,7 +69,9 @@ const Signup = () => {
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control
                                     type="email"
+                                    onBlur={handleEmailChange}
                                     placeholder="Email Address"
+                                    required
                                 />
                             </Form.Group>
                             <Form.Group
@@ -41,21 +81,25 @@ const Signup = () => {
                                 <Form.Label>PASSWORD</Form.Label>
                                 <Form.Control
                                     type="password"
+                                    onBlur={handlePasswordChange}
                                     placeholder="..........."
+                                    required
                                 />
                             </Form.Group>
-                            <Form.Group
+                            <span>{error || regiError}</span>
+                            {/* <Form.Group
                                 className="mb-3"
-                                controlId="formBasicPassword"
+                                controlId="formPassword"
                             >
                                 <Form.Label>CONFIRM PASSWORD</Form.Label>
                                 <Form.Control
                                     type="password"
                                     placeholder="............"
+                                    required
                                 />
-                            </Form.Group>
+                            </Form.Group> */}
                             <div className="d-grid gap-2 my-4">
-                                <Button variant="secondary">
+                                <Button variant="secondary" type="submit">
                                     Create Account
                                 </Button>
                             </div>

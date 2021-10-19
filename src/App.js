@@ -9,9 +9,10 @@ import Signup from "./components/Signup/Signup";
 import Departments from "./components/Departments/Departments";
 import AllService from "./components/AllService/AllService";
 import Doctors from "./components/Doctors/Doctors";
-import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import AuthProvider from "./context/AuthProvider";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import SingleService from "./components/SingleService/SingleService";
 
 function App() {
     return (
@@ -29,15 +30,15 @@ function App() {
                         <Route path="/departments">
                             <Departments></Departments>
                         </Route>
-                        <Route path="/allService">
+                        <PrivateRoute path="/singleService/:serviceId">
+                            <SingleService></SingleService>
+                        </PrivateRoute>
+                        <PrivateRoute path="/allService">
                             <AllService></AllService>
-                        </Route>
-                        <Route path="/doctors">
+                        </PrivateRoute>
+                        <PrivateRoute path="/doctors">
                             <Doctors></Doctors>
-                        </Route>
-                        <Route path="/about">
-                            <About></About>
-                        </Route>
+                        </PrivateRoute>
                         <Route path="/contact">
                             <Contact></Contact>
                         </Route>

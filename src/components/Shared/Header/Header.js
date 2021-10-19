@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import "./Header.css";
 
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -17,9 +18,8 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <img
+                            className="headerimg"
                             src="https://i.ibb.co/k6GXFhx/logo.png"
-                            width="60px"
-                            height="50px"
                             alt=""
                         />
                         MEDICHA
@@ -39,15 +39,25 @@ const Header = () => {
                             <Nav.Link as={Link} to="/doctors">
                                 Doctors
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/about">
-                                About
-                            </Nav.Link>
+
                             <Nav.Link as={Link} to="/contact">
                                 Contact
                             </Nav.Link>
                         </Nav>
                         {user.displayName ? (
-                            <button onClick={logOut}>Log Out</button>
+                            <span>
+                                <span className="username">
+                                    {user.displayName}
+                                </span>
+                                <span className=" logout" onClick={logOut}>
+                                    Log Out
+                                </span>
+                                <img
+                                    src={user.photoURL}
+                                    className="profile"
+                                    alt=""
+                                />
+                            </span>
                         ) : (
                             <Nav>
                                 <Nav.Link as={Link} to="/signin">
