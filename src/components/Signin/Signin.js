@@ -2,17 +2,15 @@ import React, { useState } from "react";
 import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import "./Signin.css";
 
 const Signin = () => {
-    const {
-        logInError,
-        signInUsingGoogle,
-        signInUsingGithub,
-        processLogin,
-        setIsLoading,
-    } = useAuth();
+    const { signInUsingGoogle, signInUsingGithub, processLogin, setIsLoading } =
+        useAuth();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [logInError, setLogInError] = useState("");
+
     const history = useHistory();
     const location = useLocation();
     const redirect_url = location.state?.from || "/";
@@ -40,19 +38,30 @@ const Signin = () => {
 
     const handleLogIn = (e) => {
         e.preventDefault();
-        processLogin(email, password);
+        processLogin(email, password)
+            .then((result) => {
+                history.push(redirect_url);
+                setLogInError("");
+            })
+            .catch((error) => {
+                setLogInError(error.message);
+            });
     };
 
     return (
         <>
-            <Container>
+            <Container className="py-5">
                 <Row>
-                    <Col>
+                    <Col xs={12} md={6} className="mb-5">
                         <h1 className="text-center fw-bold">MEDICHA</h1>
-                        <img src="https://i.ibb.co/k6GXFhx/logo.png" alt="" />
+                        <img
+                            className="authimg"
+                            src="https://i.ibb.co/k6GXFhx/logo.png"
+                            alt=""
+                        />
                     </Col>
-                    <Col>
-                        <h2 className="text-center">SIGN IN</h2>
+                    <Col xs={12} md={6}>
+                        <h1 className="text-center fw-bold">SIGN IN</h1>
                         <Form
                             className="mx-auto pt-4 pb-5 w-75"
                             onSubmit={handleLogIn}

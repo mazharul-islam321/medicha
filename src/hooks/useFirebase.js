@@ -17,7 +17,7 @@ initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [regiError, setRegiError] = useState("");
-    const [logInError, setLogInError] = useState("");
+
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -47,15 +47,7 @@ const useFirebase = () => {
         updateProfile(auth.currentUser, { displayName: name }).then(() => {});
     };
     const processLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                const user = result.user;
-                console.log(user);
-                setLogInError("");
-            })
-            .catch((error) => {
-                setLogInError(error.message);
-            });
+        return signInWithEmailAndPassword(auth, email, password);
     };
     const logOut = () => {
         setIsLoading(true);
@@ -79,7 +71,6 @@ const useFirebase = () => {
     return {
         user,
         regiError,
-        logInError,
         isLoading,
         setIsLoading,
         logOut,

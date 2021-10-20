@@ -38,13 +38,17 @@ const Signup = () => {
 
     return (
         <>
-            <Container>
+            <Container className="py-5">
                 <Row>
-                    <Col>
+                    <Col xs={12} md={6} className="mb-5">
                         <h1 className="text-center fw-bold">MEDICHA</h1>
-                        <img src="https://i.ibb.co/k6GXFhx/logo.png" alt="" />
+                        <img
+                            className="authimg"
+                            src="https://i.ibb.co/k6GXFhx/logo.png"
+                            alt=""
+                        />
                     </Col>
-                    <Col>
+                    <Col xs={12} md={6}>
                         <Form
                             className="mx-auto pt-4 pb-5 w-75"
                             onSubmit={handleRegistration}

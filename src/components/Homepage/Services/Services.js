@@ -18,7 +18,7 @@ const Services = (props) => {
                     </Card.Body>
                     <div className="mx-auto mb-3">
                         <Link to={`/singleService/${id}`}>
-                            <Button>Details</Button>
+                            <Button className="btn btn-warning">Details</Button>
                         </Link>
                     </div>
                 </Card>
