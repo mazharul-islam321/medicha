@@ -11,12 +11,14 @@ import {
     signInWithEmailAndPassword,
 } from "firebase/auth";
 import initializeAuthentication from "../firebase/Firebase.Init";
+import useServices from "./useServices";
 
 initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [regiError, setRegiError] = useState("");
+    const [services] = useServices();
 
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
@@ -70,6 +72,7 @@ const useFirebase = () => {
 
     return {
         user,
+        services,
         regiError,
         isLoading,
         setIsLoading,

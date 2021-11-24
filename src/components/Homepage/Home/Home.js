@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
+import useAuth from "../../../hooks/useAuth";
 import useDepartment from "../../../hooks/useDepartment";
-import useServices from "../../../hooks/useServices";
 import Carousel from "../Carousels/Carousels";
 import Department from "../Department/Department";
 import Services from "../Services/Services";
@@ -11,7 +11,7 @@ import "./Home.css";
 
 const Home = () => {
     const [departments] = useDepartment();
-    const [services] = useServices();
+    const { services } = useAuth();
     const newDepartments = departments.slice(0, 4);
     const newServices = services.slice(0, 6);
     return (
